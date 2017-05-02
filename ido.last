@@ -1,0 +1,50 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/dox/Algorithms/comp317/" . "assign3/")
+ ("/home/dox/Algorithms/" . "comp317/")
+ ("/home/dox/AssemblyProgramming/" . "assign4/")
+ ("/home/dox/" . "Algorithms/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/dox/Algorithms/comp317/"
+ "/home/dox/Algorithms/comp317/assign4/"
+ "/home/dox/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "Decoder.java"
+ "MergeRuns.java"
+ "init"
+ "MergeRun.java"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/dox/Algorithms/comp317/assign3/" (22791 3588 72417 123000) "../" "./")
+
+ ("/home/dox/Algorithms/comp317/assign4/" (22791 6939 420166 176000) ".#MergeRuns.java" "#MergeRun.java#" "../" "./" "MergeRuns.class" "MergeRuns.java" "MergeRuns.java~")
+
+ ("/home/dox/.emacs.d/" (22791 6570 341693 539000) "ido.last" "auto-save-list/" "init~" "../" "./" "init" "elpa/" "ido.last~")
+
+ ("/home/dox/Algorithms/comp317/" (22791 5709 28083 156000) "Unpacker.java~" "cpInput~" "Decoder.java" "Decoder.java~" "output" "input" "output.txt~" "Unpacker.class" "assign4/" "../" "./" "assign1/" "pairs.txt~" "unpacker.java~" "output.txt" "assign3/" "assign2/" "cpOutput~")
+
+ ("/home/dox/Algorithms/" (22780 16451 372989 677000) "../" "./" ".git/" "comp317/" "README.md")
+
+ ("/home/dox/AssemblyProgramming/assign4/" (22790 58681 414195 707000) ".ex4_q1.s.swp" "../" "./" "ex4_q1.srec" "ex4_q1.o" "ex4_q1.s")
+
+ ("/home/dox/AssemblyProgramming/assign3/" (22781 48984 788810 636000) "ex3_q2.s" "ex3_q4.o" "ex3_q3.s" "ex3_q2.s~" "ex3_q3.s~" "ex3_q3.resc" "ex3_q2.srec" "ex3_q1.s~" "Frankie_Dickinson.tar.gz" "../" "./" "ex3_q4.s~" "ex3_q1.o" "ex3_q3.o" "ex3_q4.srec" "test/" "ex3_q3.srec" "ex3_q1.srec" "ex3_q1.s" "ex3_q2.o" "ex3_q4.s")
+
+ ("/home/dox/AssemblyProgramming/" (22790 58681 414195 707000) "assign4/" "../" "./" "assign1/" ".git/" "assign3/" "assign2/" "README.md")
+
+ ("/home/" (22776 34541 385872 198000) "../" "./" "dox/" "comp200/")
+
+ ("/home/dox/" (22790 58711 927754 405000) "Pictures/" "Desktop/" ".cache/" "Music/" "Templates/" ".dmrc" ".gnome/" ".local/" ".npm/" ".gvfs/" "PlayOnLinux's virtual drives/" "Algorithms/" ".pki/" ".dbus/" ".mysql_history" ".fzf/" "Documents/" ".tixati/" ".recently-used" ".PlayOnLinux/" ".bash_history" "source-code-pro-2.010R-ro-1.030R-it/" ".emacs.d/" ".spacemacs" "../" ".sudo_as_admin_successful" ".ICEauthority" "./" "Public/" ".bashrc~" ".macromedia/" ".viminfo" ".gnupg/" ".gitconfig" "Downloads/" ".xsession-errors" "AssemblyProgramming/" ".mozilla/" ".wget-hsts" ".bash_logout" ".vimrc" "1.030R-it.zip" ".mplayer/" ".gksu.lock" ".PhpStorm2017.1/" ".adobe/" ".AMD/" ".bashrc" "Videos/" ".compiz/" ".vim/" ".gconf/" ".eclipse/" ".profile" ".Xauthority" ".p2/" ".fonts/" ".xsession-errors.old" ".Xresources" "WebDevelopment/" ".mono/" ".gphoto/" ".fzf.bash" ".ssh/" ".Xresources.swp" ".java/" ".config/" ".wine/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

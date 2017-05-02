@@ -1,0 +1,65 @@
+;; Line Numbers 
+(global-linum-mode t)
+
+;; Stock state variables 
+(which-function-mode 1)
+
+;; Shows which function the point is in
+(show-paren-mode 1)
+
+;; Highlight piars of parenthesis
+(electric-pair-mode 1)
+
+;; Emacs uses tabs by default sets it to spaces
+(setq-default indent-tabs-mode nil)
+(setq tab-width 2)
+
+;; Disable Emacs start up screen
+(setq inhibit-splash-screen t)
+(setq inhibit-startup-message t)
+
+;; IDO
+(require 'ido)
+(ido-mode t)
+
+;; Enable Basic Syntax Highlighting
+(global-font-lock-mode t)
+
+;; Hiding GUI Menus
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(tool-bar-mode -1)
+
+;; CC mode for C,C++ and Java 
+(setq-default c-basic-offset 2)
+;; Set CC mode brace style
+(setq c-default-style "linux")
+(setq c-basic-offset 2)
+(setq electric-layout-rules '((?\{ . around) (?\} . around)))
+;; Allow Packages from ELPA and MELPA
+(require 'package) ;; You might already have this line
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize) ;; You might already have this line
+
+;; Color theme
+
+(require 'color-theme-sanityinc-tomorrow)
+(load-theme 'sanityinc-tomorrow-day)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
