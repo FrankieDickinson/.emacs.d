@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/afd10/AssemblyProgramming/" . "assign4/")
  ("/home/dox/.emacs.d/" . "auto-save-list/")
  ("/etc/" . "init.d/")
  ("/" . "etc/")
@@ -13,6 +14,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/afd10/.emacs.d/"
+ "/home/afd10/AssemblyProgramming/assign4/"
  "/home/dox/AssemblyProgramming/assign3/"
  "/home/dox/.emacs.d/"
  "/home/dox/AssemblyProgramming/assign4/"
@@ -24,9 +27,9 @@
 
 ;; ----- ido-work-file-list -----
 (
- "ex3_q1.s"
  "init"
  "ex4_q1.s"
+ "ex3_q1.s"
  "t400middlemouse.sh"
  "Decoder.java"
  "todo.org"
@@ -36,6 +39,14 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/afd10/.emacs.d/" (22802 19291 10334 732000) ".git/" "ido.last~" "../" "init" "init~" "ido.last" "elpa/" "auto-save-list/" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "./")
+
+ ("/home/afd10/AssemblyProgramming/assign4/" (22802 20565 689896 762000) "ex4_q1.s" "../" "ex4_q1.o" "ex4_q1.srec" ".emacs.d/" "./")
+
+ ("/home/afd10/AssemblyProgramming/" (22788 14257 835158 543000) ".git/" "README.md" "assign4/" "assign1/" "../" "assign2/" "assign3/" "./")
+
+ ("/home/afd10/" (22802 19200 168154 810000) ".gnupg/" ".compiz/" ".cabal/" ".gradle/" ".thunderbird/" "comp200/" "course_html/" ".bash_history" ".bashrc~" ".gitconfig" "comp233.zip" ".AndroidStudio/" ".gimp-2.8/" ".AndroidStudio2.1/" ".oracle_jre_usage/" "Public/" ".viminfo" ".emacs.desktop" "comp333/" ".xsession-errors" ".gconf/" ".nv/" "../" ".pki/" "AssemblyProgramming/" ".bluefish/" ".xsession-errors.old" ".ssh/" "Frankie/" ".recently-used" "Pictures/" ".ICEauthority" ".mailcap" "workspace/" ".mozilla/" "Documents/" "PreviousYear/" ".AMD/" "Downloads/" "Templates/" ".bashrc.save.1" ".bashrc" "Videos/" ".aptitude/" ".vim/" ".vimrc" ".dbus/" ".java/" ".ghc/" ".xinitrc" ".mono/" ".spacemacs" "#.profile#" ".local/" ".emacs.d/" "test.java~" ".profile" ".gnome/" ".nfs00000000102239bb0000221a" "bin.tar.gz" "intro.s~" "junk/" ".bashrc.save" ".dmrc" ".config/" "comp333assn2.tar.gz" "COMP200VM-2017.ova" ".nfs0000000010222bf300000201" "./" ".profile~" "bin/" "Desktop/" ".bashrc.swp" ".eclipse/" "Music/" ".android/" ".cache/" "intro/" "public_html/" "Algorithms/" ".Xauthority")
+
  ("/home/dox/AssemblyProgramming/assign3/" (22796 13234 691542 795000) "../" ".ex3_q1.s.swp" "ex3_q4.s" "ex3_q1.s" "ex3_q2.s" "./" "ex3_q3.s")
 
  ("/home/dox/AssemblyProgramming/assign4/" (22797 15976 351671 206000) "../" "ex4_q1.s" "ex4_q1.srec" "ex4_q1.o" "./")

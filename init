@@ -14,7 +14,7 @@
 
 ;; Emacs uses tabs by default sets it to spaces
 (setq-default indent-tabs-mode nil)
-(setq tab-width 2)
+(setq-default tab-width 4)
 
 ;; Disable Emacs start up screen
 (setq inhibit-splash-screen t)

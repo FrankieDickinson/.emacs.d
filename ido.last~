@@ -2,44 +2,55 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/dox/.emacs.d/" . "auto-save-list/")
  ("/etc/" . "init.d/")
  ("/" . "etc/")
  ("/home/dox/Algorithms/comp317/" . "assign3/")
  ("/home/dox/Algorithms/" . "comp317/")
- ("/home/dox/AssemblyProgramming/" . "assign4/")
- ("/home/dox/" . "Algorithms/")
+ ("/home/dox/AssemblyProgramming/" . "assign3/")
+ ("/home/dox/" . "AssemblyProgramming/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/dox/AssemblyProgramming/assign3/"
+ "/home/dox/.emacs.d/"
  "/home/dox/AssemblyProgramming/assign4/"
  "/etc/init.d/"
  "/home/dox/Algorithms/comp317/"
  "/home/dox/"
- "/home/dox/.emacs.d/"
  "/home/dox/Algorithms/comp317/assign4/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "ex3_q1.s"
+ "init"
  "ex4_q1.s"
  "t400middlemouse.sh"
  "Decoder.java"
  "todo.org"
- "init"
  "MergeRuns.java"
  "MergeRun.java"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/dox/AssemblyProgramming/assign4/" (22796 65316 514991 104000) "../" "ex4_q1.s" "#ex4_q1.s#" "ex4_q1.srec" "ex4_q1.o" "./")
+ ("/home/afd10/.emacs.d/" (22799 52800 861435 300000) ".git/" "ido.last~" "../" "init" "init~" "ido.last" "elpa/" "auto-save-list/" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "./")
 
- ("/home/dox/" (22796 65496 23881 241000) "../" "Music/" "terminal.app/" ".dir_colors/" "#.profile#" "Desktop/" "AssemblyProgramming/" ".gstreamer-0.10/" ".pki/" ".gnupg/" ".zcompdump" ".gconf/" ".config/" "Release.key" "Pictures/" ".xsession-errors" ".dbus/" ".bash_history" ".zshrc" "Templates/" ".cache/" ".ICEauthority" ".xsession-errors.old" ".Xauthority" ".dmrc" "term/" "zsh-5.2/" ".screenrc~" ".bashrc~" ".gksu.lock" "Documents/" "Public/" "screen-256color.el" ".local/" "Videos/" ".mozilla/" ".gnome/" ".gitconfig" ".emacs.d/" ".bash_logout" "Downloads/" "./" ".bashrc" ".profile" ".screenrc")
+ ("/home/dox/AssemblyProgramming/assign3/" (22796 13234 691542 795000) "../" ".ex3_q1.s.swp" "ex3_q4.s" "ex3_q1.s" "ex3_q2.s" "./" "ex3_q3.s")
+
+ ("/home/dox/AssemblyProgramming/assign4/" (22797 15976 351671 206000) "../" "ex4_q1.s" "ex4_q1.srec" "ex4_q1.o" "./")
+
+ ("/home/dox/" (22797 15788 194738 186000) "../" "Music/" "terminal.app/" ".dir_colors/" "#.profile#" "Desktop/" "AssemblyProgramming/" ".gstreamer-0.10/" ".pki/" ".gnupg/" ".histfile" ".zcompdump" ".gconf/" ".config/" "Release.key" "Pictures/" ".xsession-errors" ".dbus/" ".bash_history" ".zshrc" "Templates/" ".cache/" ".ICEauthority" ".xsession-errors.old" ".Xauthority" ".dmrc" "term/" "zsh-5.2/" ".screenrc~" ".bashrc~" ".gksu.lock" "Documents/" "Public/" "screen-256color.el" ".local/" "Videos/" ".mozilla/" ".gnome/" ".gitconfig" ".emacs.d/" ".bash_logout" "Downloads/" "./" ".bashrc" ".xinitrc" ".profile" ".screenrc")
+
+ ("/home/dox/.emacs.d/" (22797 3421 269044 629000) "../" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "ido.last~" "ido.last" "elpa/" "init" ".#init" "auto-save-list/" ".git/" "./" "init~" "#init#")
+
+ ("/home/dox/.emacs.d/auto-save-list/" (22797 1687 760448 624000) "../" ".saves-31925-debian.telecom~" ".saves-6392-dox-ThinkPad-T400~" "./")
+
+ ("/home/" (22795 7367 954947 599000) "../" "dox/" "comp200/" "./")
 
  ("/home/dox/AssemblyProgramming/" (22796 13234 691542 795000) "../" "assign2/" "assign4/" "assign3/" "README.md" "assign1/" ".git/" "./")
-
- ("/home/dox/.emacs.d/" (22795 5526 981957 805000) "../" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "ido.last~" "ido.last" "elpa/" "init" "auto-save-list/" ".git/" "./" "init~")
 
  ("/etc/init.d/" (22795 5110 967894 903000) "../" "mountall.sh" "kmod" "mountnfs.sh" "mountdevsubfs.sh" "sudo" "plymouth-log" "anacron" "umountnfs.sh" "ssh" "speech-dispatcher" "checkroot.sh" "mountall-bootclean.sh" "dbus" "pppd-dns" "saned" "console-setup" "rsyslog" "killprocs" "cups-browsed" "rmnologin" "keyboard-setup" "rpcbind" "rsync" "atd" "umountfs" "rc.local" ".depend.start" "hddtemp" "exim4" "umountroot" "hostname.sh" "halt" "cups" "README" ".depend.stop" "udev" "checkroot-bootclean.sh" "lm-sensors" "irqbalance" "skeleton" "mountkernfs.sh" "sendsigs" "bootmisc.sh" "procps" "networking" "plymouth" "network-manager" "x11-common" "motd" "bluetooth" "bootlogs" "uuidd" "cron" "hwclock.sh" ".depend.boot" "live-tools" "kbd" "checkfs.sh" "open-vm-tools" "reboot" "rc" "binfmt-support" "./" "avahi-daemon" "mountnfs-bootclean.sh" "lightdm" "nfs-common" "urandom" "udev-finish" "alsa-utils" "single" "rcS")
 
@@ -51,13 +62,9 @@
 
  ("/home/dox/Algorithms/" (22792 5578 402281 992000) "README.md" "../" "./" ".git/" "comp317/")
 
- ("/home/" (22728 35020 797285 112000) "../" "./" "comp200/" "dox/")
-
  ("/home/dox/Algorithms/comp317/assign3/" (22791 3588 72417 123000) "../" "./")
 
  ("/home/dox/Algorithms/comp317/assign4/" (22791 6939 420166 176000) ".#MergeRuns.java" "#MergeRun.java#" "../" "./" "MergeRuns.class" "MergeRuns.java" "MergeRuns.java~")
-
- ("/home/dox/AssemblyProgramming/assign3/" (22781 48984 788810 636000) "ex3_q2.s" "ex3_q4.o" "ex3_q3.s" "ex3_q2.s~" "ex3_q3.s~" "ex3_q3.resc" "ex3_q2.srec" "ex3_q1.s~" "Frankie_Dickinson.tar.gz" "../" "./" "ex3_q4.s~" "ex3_q1.o" "ex3_q3.o" "ex3_q4.srec" "test/" "ex3_q3.srec" "ex3_q1.srec" "ex3_q1.s" "ex3_q2.o" "ex3_q4.s")
 )
 
 ;; ----- ido-unc-hosts-cache -----
