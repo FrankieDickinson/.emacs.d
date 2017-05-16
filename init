@@ -36,7 +36,7 @@
 (setq-default c-basic-offset 2)
 ;; Set CC mode brace style
 (setq c-default-style "linux")
-(setq c-basic-offset 2)
+(setq c-basic-offset 4)
 (setq electric-layout-rules '((?\{ . around) (?\} . around)))
 ;; Allow Packages from ELPA and MELPA
 (require 'package) ;; You might already have this line
