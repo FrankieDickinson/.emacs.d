@@ -2,23 +2,31 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/dox/WebDevelopment/comp333assn3/" . "css/")
+ ("/home/dox/WebDevelopment/" . "comp333assn3/")
+ ("/home/" . "dox/")
  ("/home/afd10/AssemblyProgramming/" . "assign4/")
  ("/home/dox/.emacs.d/" . "auto-save-list/")
  ("/etc/" . "init.d/")
  ("/" . "etc/")
  ("/home/dox/Algorithms/comp317/" . "assign3/")
  ("/home/dox/Algorithms/" . "comp317/")
- ("/home/dox/AssemblyProgramming/" . "assign3/")
- ("/home/dox/" . "AssemblyProgramming/")
+ ("/home/dox/AssemblyProgramming/" . "project/")
+ ("/home/dox/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/dox/WebDevelopment/comp333assn3/css/"
+ "/home/dox/WebDevelopment/comp333assn3/"
+ "/home/dox/WebDevelopment/comp333assn3/javascript/"
+ "/home/dox/.emacs.d/"
+ "/home/dox/AssemblyProgramming/project/"
+ "/home/dox/AssemblyProgramming/assign3/"
+ "/home/dox/AssemblyProgramming/assign4/"
+ "/home/dox/Algorithms/comp317/assign3/"
  "/home/afd10/.emacs.d/"
  "/home/afd10/AssemblyProgramming/assign4/"
- "/home/dox/AssemblyProgramming/assign3/"
- "/home/dox/.emacs.d/"
- "/home/dox/AssemblyProgramming/assign4/"
  "/etc/init.d/"
  "/home/dox/Algorithms/comp317/"
  "/home/dox/"
@@ -27,18 +35,54 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "style.css"
+ "index.html"
+ "tourist_api.js"
  "init"
- "ex4_q1.s"
+ "serial_task.s"
+ "parallel_task.s"
+ "kernel_q9.s"
+ "idle.s"
+ "Makefile"
  "ex3_q1.s"
- "t400middlemouse.sh"
- "Decoder.java"
- "todo.org"
- "MergeRuns.java"
- "MergeRun.java"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/dox/WebDevelopment/comp333assn3/javascript/" (22839 43291 986805 918000) ".#tourist_api.js" "../" "tourist_api.js~" "./" "tourist_api.js")
+
+ ("/home/dox/WebDevelopment/comp333assn3/css/" (22837 3913 651539 487000) "../" "./")
+
+ ("/home/dox/WebDevelopment/comp333assn3/" (22839 38961 378144 63000) "mysql/" "index.html~" "../" "css/" "index.html" "./" "php/" "javascript/")
+
+ ("/home/dox/.emacs.d/" (22839 38614 733003 592000) "elpa/" "init" "session.1018088e94a0cb1fb149618934686216200000015830060" "auto-save-list/" ".git/" "init~" "ido.last~" "../" "./" "ido.last" "session.101ac4124c5f4d1975149637423197732300000046600060" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.10e9ba48030bd45aa149628054894669400000243640060")
+
+ ("/etc/init.d/" (22837 6042 921996 762000) ".depend.stop" "binfmt-support" ".depend.start" "keyboard-setup" "hwclock.sh" "console-setup" "mountkernfs.sh" "mysql" "brltty" "irqbalance" "procps" "rc.local" "apache-htcacheclean" "x11-common" "apache2" "avahi-daemon" "whoopsie" "dbus" "sendsigs" "kerneloops" "README" "rsync" "umountnfs.sh" "lightdm" "speech-dispatcher" "apparmor" "grub-common" "resolvconf" "single" "../" "reboot" "kmod" "apport" "networking" "checkroot.sh" "skeleton" "unattended-upgrades" "killprocs" "rc" "rsyslog" "mountnfs-bootclean.sh" "rcS" "mountall-bootclean.sh" "pppd-dns" "saned" "mountnfs.sh" "cron" "checkroot-bootclean.sh" "./" "mono-xsp4" "anacron" "umountroot" "hddtemp" "mountdevsubfs.sh" "network-manager" "uuidd" "hostname.sh" "ondemand" "checkfs.sh" "plymouth-log" "bluetooth" "gdm3" "cups-browsed" "alsa-utils" "bootmisc.sh" "halt" "udev" "ufw" "urandom" "acpid" "lm-sensors" "thermald" "plymouth" ".depend.boot" "umountfs" "cups" "mountall.sh")
+
+ ("/home/dox/AssemblyProgramming/project/" (22834 44340 2878 373000) "parallel_task.srec" "kernel_q5.o" "idle.o" "parallel_task.o" "kernel_q7.srec" "rex.h" "Makefile~" "kernel_q8.s" "serial_task.c~" "kernel_q6.s" "kernel_q7.o" "kernel_q7.s" "Frankie_Dickinson.tar.gz" "kernel_q9.srec" "kernel_q5.s~" "switches.c" "kernel_q3.srec" "kernel_q6.s~" "kernel_q4.srec" "idle.s" "kernel_q9.s~" "switches.s" "format_3.s" "format_1.s~" "../" "kernel_q9.o" "kernel_q6.srec" "kernel_q8.s~" "serial_task.srec" "serial_task.s" "parallel_task.s" "format_3.s~" "gameSelect.o" "a.out" "idle.s~" "serial_task.o" "kernel_q8.srec" "format_3.o" "breakout.o" "idle.srec" "Makefile" "kernel_q3.o" "./" "format_1.s" "parallel_task.s~" "kernel_q8.o" "kernel_q4.o" "kernel_q7.s~" "kernel_q4.s" "#kernel_q3.s#" "kernel_q5.s" "kernel_q9.s" "kernel_q3.s" "kernel_q3.s~" "kernel_q6.o" "kernel_q5.srec" "rocks.o" "serial_task.s~" "format_3.srec")
+
+ ("/home/dox/.emacs.d/elpa/" (22839 38490 410414 111000) "font-lock+-20170222.1755/" "color-theme-sanityinc-tomorrow-20170430.203/" "dracula-theme-20170412.845/" "web-mode-readme.txt" "web-mode-20170603.632/" "company-20170517.1436/" "js2-mode-readme.txt" "gnupg/" "color-theme-sanityinc-tomorrow-readme.txt" "../" "archives/" "#init#" "all-the-icons-20170428.1114/" "./" "company-readme.txt" "spacemacs-theme-20170305.506/" "js2-mode-20170516.1643/")
+
+ ("/home/dox/.emacs.d/elpa/js2-mode-20170516.1643/" (22839 38490 126426 537000) "js2-mode-autoloads.el~" "js2-old-indent.elc" "../" "js2-old-indent.el" "js2-imenu-extras.el" "./" "js2-imenu-extras.elc" "js2-mode-pkg.el" "js2-mode.elc" "js2-mode-autoloads.el" "js2-mode.el")
+
+ ("/home/dox/" (22839 32919 603794 859000) "Public/" "node_modules/" ".steampath" "Steam/" ".bashrc~" ".gksu.lock" ".gitconfig" ".config/" ".xsession-errors" ".adobe/" ".cache/" ".bash_logout" ".gconf/" ".pki/" ".gnupg/" "Downloads/" ".dmrc" "Videos/" "package-lock.json" ".dbus/" ".themes/" "Pictures/" ".profile" ".Xauthority" "../" ".mozilla/" ".ICEauthority" ".ssh/" ".bash_history" ".recently-used" "WebDevelopment/" ".wget-hsts" ".local/" ".xsession-errors.old" ".mono/" ".bashrc" ".macromedia/" ".sudo_as_admin_successful" ".tixati/" "Algorithms/" "Templates/" "Music/" "AssemblyProgramming/" ".xscreensaver" ".pulse-cookie" ".emacs.d/" "./" ".nano/" "Desktop/" ".gnome/" "package.json" ".steam/" "Release.key" ".mysql_history" ".npm/" ".steampid" ".thumbnails/" "Documents/" ".Xdefaults")
+
+ ("/home/dox/WebDevelopment/" (22837 6173 961159 715000) "comp333assn1.tar.gz" ".git/" "comp333assn1/" "README.md" "notes.org" "../" "assign1.tar.gz" "index.html" "./" "info.php~" "info.php" "comp333assn2/" "comp333assn3/")
+
+ ("/home/" (22829 11749 161340 52000) "comp200/" "../" "./" "dox/")
+
+ ("/home/dox/AssemblyProgramming/assign3/" (22829 10484 518946 963000) "ex3_q1.s" ".ex3_q1.s.swp" "../" "ex3_q2.s" "./" "ex3_q4.s" "ex3_q3.s")
+
+ ("/home/dox/Algorithms/comp317/assign3/" (22810 49604 642600 241000) "Run.class" "PolyphaseSearchSpace.java" "MergeRuns.class" "Run.java" "../" "Run.java~" "MakeRuns.java" "PriorityQueue.java" "./" "PPSSTest.java" "Heap.java" "#MergeRun.java#" "MergeRuns.java" "Heap.java~" "MergeRuns.java~")
+
+ ("/home/dox/AssemblyProgramming/assign4/" (22829 10484 522946 864000) "ex4_q4.s" "ex4_q1.s" "ex4_q3.s" "ex4_q4.srec" "ex4_q2.o" "ex4_q1.o" "ex4_q3.o" "ex4_q2.s~" "../" "ex4_q2.srec" "ex4_q4.o" "ex4_q1.srec" ".emacs.d/" "./" "ex4_q4.s~" "ex4_q3.srec" "ex4_q2.s")
+
+ ("/home/dox/AssemblyProgramming/" (22829 10484 522946 864000) "assign1/" ".git/" "assign3/" "README.md" "project/" "../" "./" "assign4/" "assign2/")
+
+ ("/home/dox/Algorithms/comp317/" (22807 58962 286508 699000) "cpInput~" "assign1/" "output.txt~" "pairs.txt~" "Decoder.java~" "assign3/" "Decoder.java" "input" "../" "output.txt" "output" "cpOutput~" "Unpacker.java~" "Unpacker.class" "./" "assign2/" "unpacker.java~")
+
+ ("/home/dox/Algorithms/" (22807 58962 170512 632000) ".git/" "README.md" "../" "comp317/" "./")
+
  ("/home/afd10/.emacs.d/" (22802 19291 10334 732000) ".git/" "ido.last~" "../" "init" "init~" "ido.last" "elpa/" "auto-save-list/" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "./")
 
  ("/home/afd10/AssemblyProgramming/assign4/" (22802 20565 689896 762000) "ex4_q1.s" "../" "ex4_q1.o" "ex4_q1.srec" ".emacs.d/" "./")
@@ -47,31 +91,11 @@
 
  ("/home/afd10/" (22802 19200 168154 810000) ".gnupg/" ".compiz/" ".cabal/" ".gradle/" ".thunderbird/" "comp200/" "course_html/" ".bash_history" ".bashrc~" ".gitconfig" "comp233.zip" ".AndroidStudio/" ".gimp-2.8/" ".AndroidStudio2.1/" ".oracle_jre_usage/" "Public/" ".viminfo" ".emacs.desktop" "comp333/" ".xsession-errors" ".gconf/" ".nv/" "../" ".pki/" "AssemblyProgramming/" ".bluefish/" ".xsession-errors.old" ".ssh/" "Frankie/" ".recently-used" "Pictures/" ".ICEauthority" ".mailcap" "workspace/" ".mozilla/" "Documents/" "PreviousYear/" ".AMD/" "Downloads/" "Templates/" ".bashrc.save.1" ".bashrc" "Videos/" ".aptitude/" ".vim/" ".vimrc" ".dbus/" ".java/" ".ghc/" ".xinitrc" ".mono/" ".spacemacs" "#.profile#" ".local/" ".emacs.d/" "test.java~" ".profile" ".gnome/" ".nfs00000000102239bb0000221a" "bin.tar.gz" "intro.s~" "junk/" ".bashrc.save" ".dmrc" ".config/" "comp333assn2.tar.gz" "COMP200VM-2017.ova" ".nfs0000000010222bf300000201" "./" ".profile~" "bin/" "Desktop/" ".bashrc.swp" ".eclipse/" "Music/" ".android/" ".cache/" "intro/" "public_html/" "Algorithms/" ".Xauthority")
 
- ("/home/dox/AssemblyProgramming/assign3/" (22796 13234 691542 795000) "../" ".ex3_q1.s.swp" "ex3_q4.s" "ex3_q1.s" "ex3_q2.s" "./" "ex3_q3.s")
-
- ("/home/dox/AssemblyProgramming/assign4/" (22797 15976 351671 206000) "../" "ex4_q1.s" "ex4_q1.srec" "ex4_q1.o" "./")
-
- ("/home/dox/" (22797 15788 194738 186000) "../" "Music/" "terminal.app/" ".dir_colors/" "#.profile#" "Desktop/" "AssemblyProgramming/" ".gstreamer-0.10/" ".pki/" ".gnupg/" ".histfile" ".zcompdump" ".gconf/" ".config/" "Release.key" "Pictures/" ".xsession-errors" ".dbus/" ".bash_history" ".zshrc" "Templates/" ".cache/" ".ICEauthority" ".xsession-errors.old" ".Xauthority" ".dmrc" "term/" "zsh-5.2/" ".screenrc~" ".bashrc~" ".gksu.lock" "Documents/" "Public/" "screen-256color.el" ".local/" "Videos/" ".mozilla/" ".gnome/" ".gitconfig" ".emacs.d/" ".bash_logout" "Downloads/" "./" ".bashrc" ".xinitrc" ".profile" ".screenrc")
-
- ("/home/dox/.emacs.d/" (22797 3421 269044 629000) "../" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "ido.last~" "ido.last" "elpa/" "init" ".#init" "auto-save-list/" ".git/" "./" "init~" "#init#")
-
  ("/home/dox/.emacs.d/auto-save-list/" (22797 1687 760448 624000) "../" ".saves-31925-debian.telecom~" ".saves-6392-dox-ThinkPad-T400~" "./")
-
- ("/home/" (22795 7367 954947 599000) "../" "dox/" "comp200/" "./")
-
- ("/home/dox/AssemblyProgramming/" (22796 13234 691542 795000) "../" "assign2/" "assign4/" "assign3/" "README.md" "assign1/" ".git/" "./")
-
- ("/etc/init.d/" (22795 5110 967894 903000) "../" "mountall.sh" "kmod" "mountnfs.sh" "mountdevsubfs.sh" "sudo" "plymouth-log" "anacron" "umountnfs.sh" "ssh" "speech-dispatcher" "checkroot.sh" "mountall-bootclean.sh" "dbus" "pppd-dns" "saned" "console-setup" "rsyslog" "killprocs" "cups-browsed" "rmnologin" "keyboard-setup" "rpcbind" "rsync" "atd" "umountfs" "rc.local" ".depend.start" "hddtemp" "exim4" "umountroot" "hostname.sh" "halt" "cups" "README" ".depend.stop" "udev" "checkroot-bootclean.sh" "lm-sensors" "irqbalance" "skeleton" "mountkernfs.sh" "sendsigs" "bootmisc.sh" "procps" "networking" "plymouth" "network-manager" "x11-common" "motd" "bluetooth" "bootlogs" "uuidd" "cron" "hwclock.sh" ".depend.boot" "live-tools" "kbd" "checkfs.sh" "open-vm-tools" "reboot" "rc" "binfmt-support" "./" "avahi-daemon" "mountnfs-bootclean.sh" "lightdm" "nfs-common" "urandom" "udev-finish" "alsa-utils" "single" "rcS")
 
  ("/etc/" (22795 5126 795973 390000) "logrotate.conf" "profile.d/" "subgid-" "network/" "ca-certificates/" "rc3.d/" ".java/" "mono/" "pam.d/" "sensors3.conf" "passwd-" "issue" "rmt" "foomatic/" "profile" "tmpfiles.d/" "ld.so.conf.d/" "init.d/" "group-" "passwd" "iscsi/" "bindresvport.blacklist" "emacs/" "bash.bashrc" "UPower/" "os-release" "insserv.conf" "machine-id" "dhcp/" "gss/" "emacs24/" "ca-certificates.conf" "selinux/" "networks" "newt/" "hosts" "subuid" "insserv/" "sound/" "gshadow" "cron.weekly/" "crontab" "drirc" "ifplugd/" "ssh/" "calendar/" "apt/" "ucf.conf" "debian_version" "speech-dispatcher/" "sysctl.d/" "nsswitch.conf" "security/" "menu/" "at-spi2/" "cupshelpers/" "shadow-" "adjtime" "mtab" "PackageKit/" "subuid-" "sudoers" "vmware-tools/" "geoclue/" "cron.monthly/" "vim/" "console-setup/" "Muttrc" "securetty" "timezone" "services" "gai.conf" "logcheck/" "modprobe.d/" "idmapd.conf" "avahi/" "shells" "issue.net" "sudoers.d/" "Muttrc.d/" "locale.alias" "netconfig" "w3m/" "magic.mime" "protocols" "rc5.d/" "hostname" "libreoffice/" "texmf/" "rcS.d/" "rsyslog.d/" "modules-load.d/" "bash_completion" "ssl/" "gtk-3.0/" "kernel/" "environment" "rc.local" "bash_completion.d/" "gnome-vfs-mime-magic" "exim4/" "fuse.conf" "localtime" "sgml/" "lintianrc" "subgid" "sensors.d/" "apache2/" "logrotate.d/" "rc6.d/" "wgetrc" "nanorc" "rc2.d/" "cups/" "xdg/" "bonobo-activation/" "aliases" "hp/" "gconf/" "udev/" "iproute2/" "systemd/" "gnome-vfs-2.0/" "debconf.conf" "usb_modeswitch.conf" "adduser.conf" "manpath.config" "ld.so.cache" "gimp/" "pam.conf" "cron.d/" "hosts.allow" "python3/" "libao.conf" "terminfo/" "mailname" "shadow" "gshadow-" "init/" "udisks2/" "sysctl.conf" "fonts/" "python/" "plymouth/" "ppp/" "email-addresses" "cron.hourly/" "rc0.d/" "ufw/" "inputrc" "group" "login.defs" "libpaper.d/" "rc1.d/" "dbus-1/" "wpa_supplicant/" "binfmt.d/" "mailcap.order" "mail.rc" "java-7-openjdk/" "motd" "request-key.d/" "bluetooth/" "mke2fs.conf" "locale.gen" ".pwd.lock" "perl/" "X11/" "ImageMagick-6/" "anacrontab" "updatedb.conf" "groff/" "apparmor.d/" "gtk-2.0/" "python2.7/" "pnm2ppa.conf" "hosts.deny" "pulse/" "initramfs-tools/" "grub.d/" "ldap/" "resolv.conf" "rsyslog.conf" "kbd/" "magic" "chatscripts/" "skel/" "usb_modeswitch.d/" "mime.types" "NetworkManager/" "default/" "libnl-3/" "cron.daily/" "hddtemp.db" "deluser.conf" "dictionaries-common/" "sane.d/" "menu-methods/" "rpc" "python3.4/" "mailcap" "polkit-1/" "reportbug.conf" "papersize" "insserv.conf.d/" "dkms/" "staff-group-for-usr-local" "xml/" "modules" "firebird/" "ld.so.conf" "apm/" "xfce4/" "lightdm/" "firefox-esr/" "at.deny" "dpkg/" "resolvconf/" "rc4.d/" "opt/" "lighttpd/" "libaudit.conf" "alternatives/" "ghostscript/" "fstab" "host.conf" "../" "./")
 
  ("/etc/X11/" (22793 34281 583738 680000) "../" "X" "xinit/" "XvMCConfig" "xkb/" "Xreset.d/" "Xwrapper.config" "Xresources/" "xsm/" "rgb.txt" "default-display-manager" "app-defaults/" "fonts/" "Xsession.d/" "./" "Xsession" "Xreset" "Xsession.options")
-
- ("/home/dox/Algorithms/comp317/" (22792 8162 801793 545000) "output.txt" "assign1/" "cpInput~" "unpacker.java~" "Unpacker.class" "../" "assign4/" "output.txt~" "./" "output" "assign2/" "pairs.txt~" "Decoder.java~" "cpOutput~" "input" "Decoder.java" "Unpacker.java~")
-
- ("/home/dox/Algorithms/" (22792 5578 402281 992000) "README.md" "../" "./" ".git/" "comp317/")
-
- ("/home/dox/Algorithms/comp317/assign3/" (22791 3588 72417 123000) "../" "./")
 
  ("/home/dox/Algorithms/comp317/assign4/" (22791 6939 420166 176000) ".#MergeRuns.java" "#MergeRun.java#" "../" "./" "MergeRuns.class" "MergeRuns.java" "MergeRuns.java~")
 )
