@@ -1,5 +1,3 @@
-;;      
-
 ;; Line Numbers 
 (global-linum-mode t)
 
@@ -27,6 +25,12 @@
 ;; Enable Basic Syntax Highlighting
 (global-font-lock-mode t)
 
+;; Set Shortcut to compile with makefile
+(global-set-key (kbd "M-m")'compile)
+
+;; Disable Bell Noise
+(setq visible-bell 1)
+
 ;; Hiding GUI Menus
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
@@ -40,7 +44,7 @@
 (setq electric-layout-rules '((?\{ . around) (?\} . around)))
 ;; Allow Packages from ELPA and MELPA
 (require 'package) ;; You might already have this line
-(add-to-list 'package-archives
+ (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
