@@ -22,6 +22,12 @@
 (require 'ido)
 (ido-mode t)
 
+;; Emacs compile window split to the vertical
+(defadvice compile (around split-horizontally activate)
+  (let ((split-width-threshold 0)
+        (split-height-threshold nil))
+    ad-do-it))
+
 ;; Enable Basic Syntax Highlighting
 (global-font-lock-mode t)
 
