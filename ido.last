@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/dox/202/" . "assign2/")
  ("/home/dox/WebDevelopment/comp333assn3/" . "css/")
  ("/home/dox/WebDevelopment/" . "comp333assn3/")
  ("/home/" . "dox/")
@@ -50,15 +51,17 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/dox/.emacs.d/" (22946 43380 122078 306000) "session.10e9ba48030bd45aa149628054894669400000243640060" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "init~" "../" "session.10fd0f60311982eb93149681532341421900000166530061" "./" "elpa/" "session.1018088e94a0cb1fb149618934686216200000015830060" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.101ac4124c5f4d1975149637423197732300000046600060" "ido.last~" ".git/" "init" "ido.last" "auto-save-list/")
+ ("/home/dox/.emacs.d/" (22946 49567 58777 239000) "session.10e9ba48030bd45aa149628054894669400000243640060" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "init~" "../" "session.10fd0f60311982eb93149681532341421900000166530061" "./" "elpa/" "session.1018088e94a0cb1fb149618934686216200000015830060" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.101ac4124c5f4d1975149637423197732300000046600060" "ido.last~" "session.10131cdf35fc0247c7150383259062991700000010850045" ".git/" "init" "ido.last" "auto-save-list/")
 
- ("/home/dox/202/" (22946 37715 433201 696000) "README.md" "assign3/" "../" "./" "assign2/" "assign1/" ".git/")
+ ("/home/" (22942 38910 307147 838000) "../" "./" "dox/")
 
- ("/home/dox/202/assign2/" (22946 42908 359493 463000) "HttpServerSession.class" "HttpServer.java" "../" "HttpServerSession.java" "./" "image.jpg" "HttpServer.java~" "HttpServerSession.java~" "makefile" "HttpServer.class" "makefile~")
+ ("/home/dox/202/assign2/" (22946 47924 362482 771000) "HttpServerSession.class" "HttpServer.java" "../" "HttpServerSession.java" "./" "image.jpg" "HttpServer.java~" "HttpServerSession.java~" "makefile" "HttpServer.class" "makefile~")
+
+ ("/home/dox/202/" (22946 45664 456068 985000) "README.md" "assign3/" "../" "./" "assign2/" "assign1/" ".git/")
+
+ ("/home/dox/" (22946 49770 801120 946000) ".gnupg/" ".gnome/" ".bash_logout" "Documents/" "Desktop/" ".gconf/" ".mozilla/" ".java/" ".local/" "Public/" "Warehouse_Mailer/" ".profile" ".pki/" "202/" "Music/" "../" "Videos/" ".android/" "Downloads/" "./" "Android/" ".AMD/" "Pictures/" ".ICEauthority" ".gksu.lock" ".gitconfig" ".cache/" "Templates/" ".dbus/" ".bashrc" ".config/" ".ssh/" ".AndroidStudio2.3/" ".emacs.d/" ".bash_history" ".sudo_as_admin_successful")
 
  ("/home/dox/.emacs.d/auto-save-list/" (22946 39534 811541 800000) ".saves-7207-dox-GA-78LMT-USB3-6-0~" "../" ".saves-22428-cms-r6-81.cms.waikato.ac.nz~" "./" ".saves-16556-dox-ThinkPad-T400~" ".saves-30499-dox-GA-78LMT-USB3-6-0~" ".saves-3052-dox-GA-78LMT-USB3-6-0~" ".saves-6392-dox-ThinkPad-T400~" ".saves-29220-dox-GA-78LMT-USB3-6-0~" ".saves-9825-cms-r1-46.cms.waikato.ac.nz~")
-
- ("/home/dox/" (22946 37732 549449 294000) ".gnupg/" ".gnome/" ".bash_logout" "Documents/" "Desktop/" ".gconf/" ".mozilla/" ".java/" ".local/" "Public/" "Warehouse_Mailer/" ".profile" ".pki/" "202/" "Music/" "../" "Videos/" ".android/" "Downloads/" "./" "Android/" ".AMD/" "Pictures/" ".ICEauthority" ".gksu.lock" ".cache/" "Templates/" ".bashrc" ".config/" ".ssh/" ".AndroidStudio2.3/" ".emacs.d/" ".bash_history" ".sudo_as_admin_successful")
 
  ("/home/dox/WebDevelopment/comp333assn3/javascript/" (22839 43291 986805 918000) ".#tourist_api.js" "../" "tourist_api.js~" "./" "tourist_api.js")
 
@@ -75,8 +78,6 @@
  ("/home/dox/.emacs.d/elpa/js2-mode-20170516.1643/" (22839 38490 126426 537000) "js2-mode-autoloads.el~" "js2-old-indent.elc" "../" "js2-old-indent.el" "js2-imenu-extras.el" "./" "js2-imenu-extras.elc" "js2-mode-pkg.el" "js2-mode.elc" "js2-mode-autoloads.el" "js2-mode.el")
 
  ("/home/dox/WebDevelopment/" (22837 6173 961159 715000) "comp333assn1.tar.gz" ".git/" "comp333assn1/" "README.md" "notes.org" "../" "assign1.tar.gz" "index.html" "./" "info.php~" "info.php" "comp333assn2/" "comp333assn3/")
-
- ("/home/" (22829 11749 161340 52000) "comp200/" "../" "./" "dox/")
 
  ("/home/dox/AssemblyProgramming/assign3/" (22829 10484 518946 963000) "ex3_q1.s" ".ex3_q1.s.swp" "../" "ex3_q2.s" "./" "ex3_q4.s" "ex3_q3.s")
 
