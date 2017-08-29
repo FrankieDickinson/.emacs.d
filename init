@@ -4,6 +4,20 @@
 ;; Stock state variables 
 (which-function-mode 1)
 
+;; Emacs frame size
+(setq initial-frame-alist
+      '(
+        (width . 160) ; character
+        (height . 60) ; lines
+        ))
+
+;; default/sebsequent window
+(setq default-frame-alist
+      '(
+        (width . 158) ; character
+        (height . 58) ; lines
+        ))
+
 ;; Shows which function the point is in
 (show-paren-mode 1)
 
@@ -45,7 +59,7 @@
 ;; CC mode for C,C++ and Java 
 (setq-default c-basic-offset 2)
 ;; Set CC mode brace style
-(setq c-default-style "linux")
+(setq c-default-style "bsd")
 (setq c-basic-offset 4)
 (setq electric-layout-rules '((?\{ . around) (?\} . around)))
 ;; Allow Packages from ELPA and MELPA
@@ -69,7 +83,7 @@
 (setq org-log-done t)
 
 ;; Emacs set font
-(set-default-font "DejaVu Sans Mono Book 10")
+(set-default-font "DejaVu Sans Mono Book 12")
 
 ;; Emacs move between windows
 (global-set-key (kbd "C-c C-b")  'windmove-left)
