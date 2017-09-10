@@ -18,8 +18,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/dox/2dGameEngine/"
  "/home/dox/.emacs.d/"
+ "/home/dox/2dGameEngine/"
  "/home/dox/202/assign3/"
  "/home/dox/202/assign2/"
  "/home/dox/WebDevelopment/comp333assn3/css/"
@@ -39,8 +39,8 @@
 
 ;; ----- ido-work-file-list -----
 (
- "test.cpp"
  "init"
+ "test.cpp"
  "TftpClient.java"
  "TftpServer.java"
  "HttpServer.java"
@@ -53,13 +53,15 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/dox/202/" (22927 59178 842562 597000) "./" "README.md" ".git/" "assign1/" "assign2/" "../")
+
+ ("/home/dox/" (22962 15298 291554 414000) ".config/" ".AndroidStudio2.3/" ".android/" ".bashrc" ".Xauthority" "AndroidStudioProjects/" "./" ".ssh/" "Public/" "Templates/" ".dbus/" ".gnome/" "AssemblyProgramming/" ".gradle/" "Algorithms/" "Downloads/" "Pictures/" ".cinnamon/" "Warehouse_Mailer/" "Desktop/" "assign1/" ".gksu.lock" ".pki/" ".bash_history" "Music/" ".gitconfig" ".cache/" "Pong_Javascript/" ".tixati/" ".sudo_as_admin_successful" ".local/" ".nano/" "Blog/" ".emacs.d/" "Videos/" ".bashrc~" ".mono/" ".recently-used" ".java/" ".ICEauthority" ".mozilla/" "Android/" ".gconf/" "Frankie_Dickinson_assign1.tar.gz" ".profile" ".dmrc" ".bash_logout" "Documents/" ".xsession-errors" ".gnupg/" ".linuxmint/" "../" "202/")
+
+ ("/home/dox/.emacs.d/" (22948 11458 593714 565000) "session.10e9ba48030bd45aa149628054894669400000243640060" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "init~" "../" "session.10fd0f60311982eb93149681532341421900000166530061" "./" "elpa/" "session.1018088e94a0cb1fb149618934686216200000015830060" "session.10c141a4eb01e0803150383958730393000000011440039" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.101ac4124c5f4d1975149637423197732300000046600060" "ido.last~" "session.10131cdf35fc0247c7150383259062991700000010850045" ".git/" "init" "ido.last" "auto-save-list/")
+
  ("/home/dox/2dGameEngine/" (22948 2775 208711 93000) "../" "./" "run" "test.cpp~" "test.c" "test.cpp")
 
  ("/home/dox/202/assign3/" (22947 53551 156765 338000) "TftpClient.class" "TftpServerWorker.class" "TftpClient.java~" "../" "TftpClient.java" "TftpServer.java~" "./" "TftpServer.class" "TftpServer.java" "makefile" "#TftpServer.java#")
-
- ("/home/dox/.emacs.d/" (22948 2146 984133 215000) "session.10e9ba48030bd45aa149628054894669400000243640060" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "init~" "../" "session.10fd0f60311982eb93149681532341421900000166530061" "./" "elpa/" "session.1018088e94a0cb1fb149618934686216200000015830060" "session.10c141a4eb01e0803150383958730393000000011440039" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.101ac4124c5f4d1975149637423197732300000046600060" "ido.last~" "session.10131cdf35fc0247c7150383259062991700000010850045" ".git/" "init" "ido.last" "auto-save-list/")
-
- ("/home/dox/" (22948 2238 874230 520000) ".gnupg/" ".gnome/" ".bash_logout" "Documents/" "Desktop/" ".gconf/" ".mozilla/" ".java/" ".local/" "2dGameEngine/" "Public/" "Warehouse_Mailer/" ".profile" ".pki/" "202/" "Music/" "../" "Videos/" ".android/" "Downloads/" "./" "Android/" ".AMD/" "Pictures/" ".ICEauthority" ".gksu.lock" ".gitconfig" ".cache/" "Templates/" ".dbus/" ".bashrc" ".config/" ".ssh/" ".AndroidStudio2.3/" ".emacs.d/" ".bash_history" ".sudo_as_admin_successful")
 
  ("/home/dox/.emacs.d/auto-save-list/" (22946 50585 175073 842000) ".saves-17940-dox-ThinkPad-T400~" ".saves-7207-dox-GA-78LMT-USB3-6-0~" "../" ".saves-22428-cms-r6-81.cms.waikato.ac.nz~" "./" ".saves-30499-dox-GA-78LMT-USB3-6-0~" ".saves-3052-dox-GA-78LMT-USB3-6-0~" ".saves-6392-dox-ThinkPad-T400~" ".saves-29220-dox-GA-78LMT-USB3-6-0~" ".saves-9825-cms-r1-46.cms.waikato.ac.nz~")
 
@@ -68,8 +70,6 @@
  ("/home/" (22942 38910 307147 838000) "../" "./" "dox/")
 
  ("/home/dox/202/assign2/" (22946 47924 362482 771000) "HttpServerSession.class" "HttpServer.java" "../" "HttpServerSession.java" "./" "image.jpg" "HttpServer.java~" "HttpServerSession.java~" "makefile" "HttpServer.class" "makefile~")
-
- ("/home/dox/202/" (22946 45664 456068 985000) "README.md" "assign3/" "../" "./" "assign2/" "assign1/" ".git/")
 
  ("/home/dox/WebDevelopment/comp333assn3/javascript/" (22839 43291 986805 918000) ".#tourist_api.js" "../" "tourist_api.js~" "./" "tourist_api.js")
 
