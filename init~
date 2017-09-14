@@ -1,8 +1,27 @@
+;; Using Evil Mode
+(require 'package)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+  (package-initialize)
+
 ;; Line Numbers 
 (global-linum-mode t)
 
 ;; Stock state variables 
 (which-function-mode 1)
+
+;; Emacs frame size
+(setq initial-frame-alist
+      '(
+        (width . 160) ; character
+        (height . 60) ; lines
+        ))
+
+;; default/sebsequent window
+(setq default-frame-alist
+      '(
+        (width . 158) ; character
+        (height . 58) ; lines
+        ))
 
 ;; Shows which function the point is in
 (show-paren-mode 1)
@@ -12,7 +31,7 @@
 
 ;; Emacs uses tabs by default sets it to spaces
 (setq-default indent-tabs-mode nil)
-(setq tab-width 2)
+(setq-default tab-width 4)
 
 ;; Disable Emacs start up screen
 (setq inhibit-splash-screen t)
@@ -22,8 +41,20 @@
 (require 'ido)
 (ido-mode t)
 
+;; Emacs compile window split to the vertical
+(defadvice compile (around split-horizontally activate)
+  (let ((split-width-threshold 0)
+        (split-height-threshold nil))
+    ad-do-it))
+
 ;; Enable Basic Syntax Highlighting
 (global-font-lock-mode t)
+
+;; Set Shortcut to compile with makefile
+(global-set-key (kbd "M-m")'compile)
+
+;; Disable Bell Noise
+(setq visible-bell 1)
 
 ;; Hiding GUI Menus
 (menu-bar-mode -1)
@@ -33,12 +64,12 @@
 ;; CC mode for C,C++ and Java 
 (setq-default c-basic-offset 2)
 ;; Set CC mode brace style
-(setq c-default-style "linux")
-(setq c-basic-offset 2)
+(setq c-default-style "bsd")
+(setq c-basic-offset 4)
 (setq electric-layout-rules '((?\{ . around) (?\} . around)))
 ;; Allow Packages from ELPA and MELPA
 (require 'package) ;; You might already have this line
-(add-to-list 'package-archives
+ (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
@@ -47,16 +78,51 @@
 
 ;; Color theme
 
-(require 'color-theme-sanityinc-tomorrow)
-(load-theme 'sanityinc-tomorrow-day)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'dracula t)
+
+;; Setting Up Org mode
+(require 'org)
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
+;; Emacs set font
+(set-default-font "DejaVu Sans Mono Book 12")
+
+;; Emacs move between windows
+(global-set-key (kbd "C-c C-b")  'windmove-left)
+(global-set-key (kbd "C-c C-f") 'windmove-right)
+(global-set-key (kbd "C-c C-p")    'windmove-up)
+(global-set-key (kbd "C-c C-n")  'windmove-down)
+
+;; Web-mode
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;; Company-mode
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; Js2-mode
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+  (add-to-list 'auto-mode-alist '("\\.jsx?\\'" . js2-jsx-mode))
+  (add-to-list 'interpreter-mode-alist '("node" . js2-jsx-mode))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
+ '(package-selected-packages
    (quote
-    ("bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" default))))
+    (evil web-mode spacemacs-theme magit js2-mode dracula-theme company color-theme-sanityinc-tomorrow all-the-icons))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
