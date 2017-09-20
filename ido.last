@@ -22,9 +22,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/Users/kiwif/Home/.emacs.d/"
  "/home/dox/202/assign3/"
+ "/home/dox/202/"
  "/home/dox/.emacs.d/"
+ "c:/Users/kiwif/Home/.emacs.d/"
  "/home/dox/2dGameEngine/"
  "/home/dox/202/assign2/"
  "/home/dox/WebDevelopment/comp333assn3/css/"
@@ -44,20 +45,32 @@
 
 ;; ----- ido-work-file-list -----
 (
- "init"
- "TftpClient.java"
  "TftpServer.java"
+ "TftpClient.java"
+ "TftpPacket.java"
+ "README.md"
+ "init"
+ "themes"
  "test.cpp"
  "HttpServer.java"
  "makefile"
  "style.css"
- "index.html"
- "tourist_api.js"
- "serial_task.s"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/dox/202/assign3/" (22977 56134 718000 841000) "TftpClient.class" "TftpServerWorker.class" "TftpClient.java~" "../" "TftpClient.java" "TftpServer.java~" "./" "image.jpg" "TftpPacket.java" "TftpServer.class" "TftpServer.java" "makefile" "TftpPacket.class" "TftpPacket.java~")
+
+ ("/home/dox/" (22977 45661 590118 536000) ".gnupg/" ".gnome/" ".bash_logout" "Documents/" "Desktop/" ".gconf/" ".mozilla/" ".java/" ".local/" "2dGameEngine/" "Public/" "Warehouse_Mailer/" ".profile" ".pki/" "202/" ".gradle/" "Music/" "../" "Videos/" ".android/" "Downloads/" "./" "Android/" ".AMD/" "Pictures/" ".emulator_console_auth_token" ".ICEauthority" ".gksu.lock" ".gitconfig" ".cache/" ".gdxsetup" "Templates/" ".dbus/" ".bashrc" ".config/" ".ssh/" ".AndroidStudio2.3/" ".emacs.d/" ".bash_history" ".sudo_as_admin_successful" "libGDX/")
+
+ ("/home/dox/.emacs.d/" (22975 33773 330049 930000) "session.10e9ba48030bd45aa149628054894669400000243640060" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "init~" "session.101fc68f6df46d8c40150552584385054200000011820088" "../" "themes/" "session.10fd0f60311982eb93149681532341421900000166530061" "./" "elpa/" "session.1018088e94a0cb1fb149618934686216200000015830060" "session.10c141a4eb01e0803150383958730393000000011440039" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.101ac4124c5f4d1975149637423197732300000046600060" "ido.last~" "session.10131cdf35fc0247c7150383259062991700000010850045" ".git/" "init" "session.104aee43da61207d03150396648128458800000011620036" "ido.last" "auto-save-list/")
+
+ ("/home/dox/202/" (22964 41862 766341 462000) "README.md" "assign3/" "../" "./" "assign2/" "assign1/" ".git/")
+
+ ("/etc/init.d/" (22970 60233 563020 592000) "console-setup" "killprocs" "gdm3" "kmod" "checkroot.sh" "urandom" "checkroot-bootclean.sh" "plymouth-log" "rc" "saned" "plymouth" "irqbalance" "umountfs" "alsa-utils" "bluetooth" "rsync" "cron" "uuidd" "../" "mountnfs.sh" "mountkernfs.sh" "resolvconf" "cups" "halt" "sendsigs" "hwclock.sh" "./" "umountroot" "rsyslog" "skeleton" "keyboard-setup" "ufw" "bootmisc.sh" "single" "rcS" "grub-common" "udev" "brltty" "mountall.sh" "x11-common" "mountnfs-bootclean.sh" ".depend.boot" "hostname.sh" "ondemand" "umountnfs.sh" "network-manager" "anacron" "cups-browsed" "whoopsie" "mountall-bootclean.sh" "acpid" "thermald" "networking" ".depend.stop" "apport" "speech-dispatcher" "checkfs.sh" "mountdevsubfs.sh" "apparmor" "pppd-dns" "dbus" "kerneloops" "unattended-upgrades" "README" "avahi-daemon" "reboot" ".depend.start" "procps" "rc.local")
+
+ ("/home/dox/202/assign2/" (22964 41862 766341 462000) "HttpServerSession.class" "HttpServer.java" "../" "HttpServerSession.java" "./" "image.jpg" "HttpServer.java~" "HttpServerSession.java~" "HttpServer.class")
+
  ("c:/Users/kiwif/Home/.emacs.d/" (22970 39974 0 0) "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "session.10fd0f60311982eb93149681532341421900000166530061" "session.10e9ba48030bd45aa149628054894669400000243640060" "session.10c141a4eb01e0803150383958730393000000011440039" "session.104aee43da61207d03150396648128458800000011620036" "session.101ac4124c5f4d1975149637423197732300000046600060" "session.1018088e94a0cb1fb149618934686216200000015830060" "session.10131cdf35fc0247c7150383259062991700000010850045" "init~" "init" "ido.last~" "ido.last" "elpa/" "auto-save-list/" ".git/" ".#init" "#init#" "../" "./")
 
  ("c:/ProgramData/" (22965 28941 0 0) "WindowsHolographicDevices/" "USOShared/" "USOPrivate/" "Unity/" "Templates/" "Start Menu/" "SoftwareUpdateTemp.xml" "SoftwareDistribution/" "shimgen/" "Riot Games/" "regid.1991-06.com.microsoft/" "Package Cache/" "Oracle/" "ntuser.pol" "Microsoft OneDrive/" "Microsoft/" "LogiShrd/" "Git/" "Gibraltar/" "FLEXnet/" "Documents/" "Desktop/" "chocolatey/" "Blizzard Entertainment/" "Battle.net/" "Autodesk/" "ATI/" "Application Data/" ".mono/" "../" "./")
@@ -86,8 +99,6 @@
 
  ("/home/dox/Algorithms/comp317/" (22844 46464 447838 925000) "exam/" "Decoder.java" "output.txt~" "./" "Unpacker.class" "cpInput~" "assign1/" "output.txt" "assign3/" "output" "pairs.txt~" "Unpacker.java~" "assign2/" "cpOutput~" "Decoder.java~" "input" "unpacker.java~" "../")
 
- ("/etc/init.d/" (22813 14866 232052 776000) "virtualbox-guest-utils" "anacron" "bluetooth" "cryptdisks" "alsa-utils" "console-setup" "halt" "skeleton" "dns-clean" "mountall.sh" "./" "cryptdisks-early" "umountroot" "brltty" "kerneloops" "irqbalance" "uuidd" "speech-dispatcher" "rsyslog" "tlp" "checkfs.sh" "mountdevsubfs.sh" "acpid" "README" "mountall-bootclean.sh" "bootmisc.sh" "mintsystem" "ufw" "cups-browsed" "resolvconf" "hwclock.sh" "thermald" "checkroot-bootclean.sh" "sendsigs" "cgmanager" "umountfs" "kmod" ".depend.boot" ".depend.start" "loadcpufreq" "plymouth" "cron" "mdm" "ondemand" "networking" "killprocs" "mountkernfs.sh" "urandom" "binfmt-support" "ntp" "umountnfs.sh" "grub-common" "saned" "reboot" "udev" "hddtemp" "cpufrequtils" "keyboard-setup" "smartmontools" "network-manager" "openvpn" "single" ".depend.stop" "mountnfs.sh" "cgproxy" "rcS" "plymouth-log" "checkroot.sh" "lvm2" "avahi-daemon" "lvm2-lvmetad" "hostname.sh" "mountnfs-bootclean.sh" "lvm2-lvmpolld" "procps" "rc.local" "pppd-dns" "rsync" "rc" "dbus" "../" "x11-common" "cups" "lm-sensors")
-
  ("/home/dox/Algorithms/comp317/assign3/" (22818 21522 355272 972000) "Tape.java" "MakeRandom.java" "1212960_1275244.tar" "#random.sorted#" "./" "Heap.class" "VerifySorted.class" "PolyphaseRunDistribution$PolyphaseTapeNode.class" "Tape.class" "PolyphaseSearchSpace.java" "MergeRuns.class" "MakeRandom.class" "random.runs" "Heap.java" "PriorityQueue.class" "assignment_3/" "PPSSTest.class" "MakeRuns.class" "VerifySorted.java" "MergeRuns.java" "1212960_1275244/" "random.sorted" "PriorityQueue.java" "PolyphaseRunDistribution.class" "PPSSTest.java" "MakeRuns.java" "PolyphaseSearchSpace.class" "../")
 
  ("/home/dox/AssemblyProgramming/assign4/" (22834 51381 560495 66000) "ex4_q2.srec" "./" "ex4_q1.s" "ex4_q2.s" "ex4_q4.s" "ex4_q4.o" "ex4_q2.o" "ex4_q3.o" ".emacs.d/" "ex4_q4.srec" "ex4_q1.srec" "ex4_q3.s" "ex4_q2.s~" "ex4_q4.s~" "ex4_q1.o" "ex4_q3.srec" "../")
@@ -95,16 +106,6 @@
  ("/home/dox/AssemblyProgramming/assign3/" (22834 51381 560495 66000) "./" "ex3_q3.s" ".ex3_q1.s.swp" "ex3_q4.s" "ex3_q1.s" "ex3_q2.s" "../")
 
  ("/home/dox/AssemblyProgramming/project/" (22834 51553 416555 125000) "idle.s~" "a.out" "kernel_q9.o" "serial_task.c~" "rocks.o" "kernel_q3.s~" "kernel_q9.srec" "switches.c" "switches.s" "kernel_q7.s" "./" "kernel_q5.s" "kernel_q7.s~" "idle.o" "kernel_q3.srec" "parallel_task.srec" "kernel_q8.s" "kernel_q9.s" "kernel_q4.s" "kernel_q8.srec" "kernel_q5.s~" "rex.h" "kernel_q8.o" "Frankie_Dickinson.tar.gz" "#kernel_q3.s#" "kernel_q4.srec" "idle.s" "kernel_q8.s~" "breakout.o" "parallel_task.s" "Makefile~" "format_3.srec" "Makefile" "kernel_q6.o" "gameSelect.o" "kernel_q5.srec" "format_3.s~" "serial_task.o" "kernel_q7.o" "format_3.s" "kernel_q5.o" "serial_task.srec" "kernel_q4.o" "kernel_q6.s" "parallel_task.s~" "kernel_q7.srec" "kernel_q6.s~" "kernel_q6.srec" "format_1.s~" "kernel_q3.s" "serial_task.s" "serial_task.s~" "idle.srec" "format_3.o" "parallel_task.o" "kernel_q9.s~" "kernel_q3.o" "../" "format_1.s")
-
- ("/home/dox/202/assign2/" (22962 16584 701160 671000) "HttpServer.class" "image.jpg" "./" "HttpServer.java~" "HttpServer.java" "HttpServerSession.class" "HttpServerSession.java~" "HttpServerSession.java" "../")
-
- ("/home/dox/.emacs.d/" (22962 16649 945624 347000) "init" "session.104aee43da61207d03150396648128458800000011620036" "./" "session.101ac4124c5f4d1975149637423197732300000046600060" "init~" ".git/" "elpa/" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.10e9ba48030bd45aa149628054894669400000243640060" "session.10fd0f60311982eb93149681532341421900000166530061" "auto-save-list/" "session.1018088e94a0cb1fb149618934686216200000015830060" "ido.last" "session.10c141a4eb01e0803150383958730393000000011440039" "ido.last~" "session.10131cdf35fc0247c7150383259062991700000010850045" "../")
-
- ("/home/dox/202/assign3/" (22962 16584 701160 671000) "./" "TftpServer.java" "TftpServer.java~" "makefile" "../")
-
- ("/home/dox/202/" (22962 16584 701160 671000) "./" "README.md" ".git/" "assign1/" "assign3/" "assign2/" "../")
-
- ("/home/dox/" (22962 16639 281549 106000) ".config/" ".AndroidStudio2.3/" ".android/" ".bashrc" ".Xauthority" "AndroidStudioProjects/" "./" ".ssh/" "Public/" "Templates/" ".dbus/" ".gnome/" "AssemblyProgramming/" ".gradle/" "Algorithms/" "Downloads/" "Pictures/" ".cinnamon/" "Warehouse_Mailer/" "Desktop/" "assign1/" ".gksu.lock" ".pki/" ".bash_history" "Music/" ".gitconfig" ".cache/" "Pong_Javascript/" ".tixati/" ".sudo_as_admin_successful" ".local/" ".nano/" "Blog/" ".emacs.d/" "Videos/" ".bashrc~" ".mono/" ".recently-used" ".java/" ".ICEauthority" ".mozilla/" "Android/" ".gconf/" "Frankie_Dickinson_assign1.tar.gz" ".profile" ".dmrc" ".bash_logout" "Documents/" ".xsession-errors" ".gnupg/" ".linuxmint/" "../" "202/")
 
  ("/home/dox/2dGameEngine/" (22948 2775 208711 93000) "../" "./" "run" "test.cpp~" "test.c" "test.cpp")
 
