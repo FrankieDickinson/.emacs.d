@@ -65,7 +65,7 @@ ad-do-it))
 ;; Allow Packages from ELPA and MELPA
 (require 'package) ;; You might already have this line
 (add-to-list 'package-archives
-'("melpa" . "https://melpa.org/packages/"))
+'("melpa" . "https://melpa.org-packages/"))
 (when (< emacs-major-version 24)
 ;; For important compatibility libraries like cl-lib
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
@@ -84,6 +84,11 @@ ad-do-it))
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
+(add-hook 'org-mode-hook 'auto-fill-mode)
+(add-hook 'org-mode-hook 'flyspell-mode)
+(add-to-list 'auto-mode-alist '("\\.txt\\'" . org-mode))
+;; Mode for writing documentation
+
 
 ;; Emacs set font
 (set-default-font "DejaVu Sans Mono Book 11")

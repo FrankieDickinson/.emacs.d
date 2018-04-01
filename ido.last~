@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/dox/PHIL217/" . "shortEssay/")
  ("c:/Users/kiwif/Home/" . ".emacs.d/")
  ("c:/Users/kiwif/" . "Home/")
  ("c:/Users/" . "kiwif/")
@@ -17,14 +18,21 @@
  ("/home/dox/Algorithms/comp317/" . "assign3/")
  ("/home/dox/Algorithms/" . "comp317/")
  ("/home/dox/AssemblyProgramming/" . "project/")
- ("/home/dox/" . ".emacs.d/")
+ ("/home/dox/" . "PHIL217/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/dox/202/assign3/"
- "/home/dox/202/"
+ "/home/dox/DBS_Project/"
+ "/home/dox/"
+ "/home/dox/PHIL217/"
+ "/home/dox/PHIL217/shortEssay/"
  "/home/dox/.emacs.d/"
+ "/home/dox/LoLTimes/"
+ "/home/dox/LoLTimes/popup_files/"
+ "/home/dox/202/assign3/"
+ "/home/dox/202/assign4/"
+ "/home/dox/202/"
  "c:/Users/kiwif/Home/.emacs.d/"
  "/home/dox/2dGameEngine/"
  "/home/dox/202/assign2/"
@@ -39,35 +47,50 @@
  "/home/afd10/AssemblyProgramming/assign4/"
  "/etc/init.d/"
  "/home/dox/Algorithms/comp317/"
- "/home/dox/"
  "/home/dox/Algorithms/comp317/assign4/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "TftpClient.java"
- "README.md"
- "TftpServer.java"
- "TftpPacket.java"
+ "dbsImages.java"
+ "shortEssayNotes.txt"
+ "disc1.txt"
+ "shortEssay.txt"
  "init"
- "themes"
- "test.cpp"
- "HttpServer.java"
- "makefile"
- "style.css"
+ "shortEssay.org"
+ "discNotes.txt"
+ ".gitignore"
+ "manifest.json"
+ "css.css"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/dox/.emacs.d/" (22975 33773 330049 930000) "session.10e9ba48030bd45aa149628054894669400000243640060" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "init~" "session.101fc68f6df46d8c40150552584385054200000011820088" "../" "themes/" "session.10fd0f60311982eb93149681532341421900000166530061" "./" "elpa/" "session.1018088e94a0cb1fb149618934686216200000015830060" "session.10c141a4eb01e0803150383958730393000000011440039" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.101ac4124c5f4d1975149637423197732300000046600060" "ido.last~" "session.10131cdf35fc0247c7150383259062991700000010850045" ".git/" "init" "session.104aee43da61207d03150396648128458800000011620036" "ido.last" "auto-save-list/")
+ ("/home/dox/DBS_Project/" (23220 41870 608556 869000) "dbsImages.java" "dbsImages.java~" "images/" "../" "dbsImages.class" "./")
 
- ("/home/dox/202/assign3/" (22975 33411 139862 143000) "TftpClient.class" "TftpServerWorker.class" "TftpClient.java~" "../" "TftpClient.java" "TftpServer.java~" "./" "image.jpg" "TftpPacket.java" "TftpServer.class" "TftpServer.java" "makefile" "TftpPacket.class" "TftpPacket.java~")
+ ("/home/dox/" (23220 64686 865932 720000) "plexmediaserver_1.5.5.3634-995f1dead_amd64.deb" "ProjectIdeas.txt" ".gnupg/" ".gnome/" ".bash_logout" "test/" "Documents/" "Desktop/" ".gconf/" ".zcompdump" ".mozilla/" ".java/" ".local/" "Public/" "shortEssayNotes.txt" ".zsh-update" ".zsh_history" ".zshrc" ".profile" ".npm/" ".viminfo" ".pki/" ".zcompdump-dox-ThinkPad-T400-5.1.1" ".gradle/" "DBS_Project/" "Music/" "../" "Videos/" ".android/" ".IdeaIC2017.2/" ".bash_profile" "rtl8188eu/" "Downloads/" "./" "LoLTimes/" "Android/" ".AMD/" "Pictures/" ".bashrc~" ".tixati/" ".emulator_console_auth_token" ".ICEauthority" "shortEssayNotes.txt~" ".gksu.lock" "AndroidStudioProjects/" ".gitconfig" ".cache/" ".gdxsetup" "Templates/" ".dbus/" "ProjectIdeas.txt~" ".bashrc" ".oh-my-zsh/" ".config/" ".ssh/" ".AndroidStudio2.3/" "hospitalrun-frontend/" ".AndroidStudio3.0/" ".emacs.d/" ".bash_history" ".electron/" ".nano/" "TL-WN722N-V2/" ".sudo_as_admin_successful" "API_Keys/" "PHIL217/" ".vscode/")
 
- ("/home/dox/" (22975 16403 569924 210000) ".gnupg/" ".gnome/" ".bash_logout" "Documents/" "Desktop/" ".gconf/" ".mozilla/" ".java/" ".local/" "2dGameEngine/" "Public/" "Warehouse_Mailer/" ".profile" ".pki/" "202/" ".gradle/" "Music/" "../" "Videos/" ".android/" "Downloads/" "./" "Android/" ".AMD/" "Pictures/" ".emulator_console_auth_token" ".ICEauthority" ".gksu.lock" ".gitconfig" ".cache/" ".gdxsetup" "Templates/" ".dbus/" ".bashrc" ".config/" ".ssh/" ".AndroidStudio2.3/" ".emacs.d/" ".bash_history" ".sudo_as_admin_successful" "libGDX/")
+ ("/home/dox/hospitalrun-frontend/dist/assets/" (23178 24999 981169 666000) "test-support.css" "vendor.map" "test-support.js" "hospitalrun.map" "hospitalrun.css" "../" "hospitalrun.js" "./" "vendor.css" "test-support.map" "vendor.js" "tests.map" "fonts/" "tests.js" "hospitalrun.css.map")
 
- ("/home/dox/202/" (22964 41862 766341 462000) "README.md" "assign3/" "../" "./" "assign2/" "assign1/" ".git/")
+ ("/home/dox/hospitalrun-frontend/" (23178 24999 913172 324000) "config/" "lib/" "tests/" "public/" "README.md" "bower.json" ".eslintrc.js" "vendor/" "ember-cli-build.js" "../" "node_modules/" "script/" "./" "Dockerfile" "CODE_OF_CONDUCT.md" "testem-electron.js" "ProjectManager.js" "typescript" ".stylelintrc" "bower_components/" "Makefile" ".ember-cli" "package-lock.json" ".snyk" "LICENSE" ".travis.yml" ".editorconfig" "app/" "assets/" ".git/" ".github/" "screenshots/" "ember-electron/" ".gitignore" "index.js" "testem.js" "package.json" ".dockerignore" "tmp/" "sample-data.txt" "docker-compose.yml" ".watchmanconfig" ".template-lintrc.js" ".bowerrc" "server/" "CHANGELOG.md" "yarn.lock" "dist/" "prod/")
 
- ("/etc/init.d/" (22970 60233 563020 592000) "console-setup" "killprocs" "gdm3" "kmod" "checkroot.sh" "urandom" "checkroot-bootclean.sh" "plymouth-log" "rc" "saned" "plymouth" "irqbalance" "umountfs" "alsa-utils" "bluetooth" "rsync" "cron" "uuidd" "../" "mountnfs.sh" "mountkernfs.sh" "resolvconf" "cups" "halt" "sendsigs" "hwclock.sh" "./" "umountroot" "rsyslog" "skeleton" "keyboard-setup" "ufw" "bootmisc.sh" "single" "rcS" "grub-common" "udev" "brltty" "mountall.sh" "x11-common" "mountnfs-bootclean.sh" ".depend.boot" "hostname.sh" "ondemand" "umountnfs.sh" "network-manager" "anacron" "cups-browsed" "whoopsie" "mountall-bootclean.sh" "acpid" "thermald" "networking" ".depend.stop" "apport" "speech-dispatcher" "checkfs.sh" "mountdevsubfs.sh" "apparmor" "pppd-dns" "dbus" "kerneloops" "unattended-upgrades" "README" "avahi-daemon" "reboot" ".depend.start" "procps" "rc.local")
+ ("/home/dox/PHIL217/" (23149 38395 191582 170000) "discNotes.txt" "disc1.txt~" "disc1.txt" "../" "discNotes.txt~" "./" "shortEssay/" "#disc1.txt#")
+
+ ("/home/dox/.emacs.d/" (23145 50839 437058 588000) "session.10e9ba48030bd45aa149628054894669400000243640060" "session.27ef872f5-783f-4a2c-8fb7-d6c568f3ee04" "session.103d1056e95e5d2306151455142014471600000011490036" "init~" "session.101fc68f6df46d8c40150552584385054200000011820088" "../" "session.10914e519c400e8a515073408159781000000011760038" "themes/" "session.10fd0f60311982eb93149681532341421900000166530061" "./" "session.10f7206ac3fdc8e28715163356721991800000011430035" "elpa/" "session.1018088e94a0cb1fb149618934686216200000015830060" "session.10c141a4eb01e0803150383958730393000000011440039" "session.2e99f94c6-f8fc-479e-a09e-a989640d2386" "session.10e77c89078f7fdbdf151666989668321300000012370036" "session.101ac4124c5f4d1975149637423197732300000046600060" "session.10c8eb6f4a55cb7ce3151596663798368900000011890036" "session.10520c407e1af63c1e150630378097401300000012030039" "session.10da3d14823981e0b5150716368097086000000011410036" "ido.last~" "session.10131cdf35fc0247c7150383259062991700000010850045" ".git/" "init" "session.104aee43da61207d03150396648128458800000011620036" "ido.last" "auto-save-list/")
+
+ ("/home/dox/PHIL217/shortEssay/" (23145 50838 325069 273000) "shortEssay.txt~" "../" "shortEssay.txt" "./")
+
+ ("/etc/init.d/" (23121 43296 715266 642000) "console-setup" "killprocs" "gdm3" "kmod" "checkroot.sh" "urandom" "checkroot-bootclean.sh" "plymouth-log" "rc" "saned" "plymouth" "irqbalance" "umountfs" "alsa-utils" "bluetooth" "rsync" "cron" "uuidd" "../" "mountnfs.sh" "mountkernfs.sh" "resolvconf" "cups" "halt" "sendsigs" "hwclock.sh" "./" "umountroot" "rsyslog" "skeleton" "keyboard-setup" "ufw" "bootmisc.sh" "single" "rcS" "grub-common" "udev" "brltty" "mountall.sh" "x11-common" "mountnfs-bootclean.sh" ".depend.boot" "hostname.sh" "ondemand" "umountnfs.sh" "network-manager" "anacron" "cups-browsed" "whoopsie" "mountall-bootclean.sh" "acpid" "thermald" "networking" ".depend.stop" "apport" "speech-dispatcher" "checkfs.sh" "mountdevsubfs.sh" "apparmor" "pppd-dns" "dbus" "kerneloops" "unattended-upgrades" "README" "avahi-daemon" "reboot" ".depend.start" "procps" "rc.local")
+
+ ("/home/dox/LoLTimes/" (23142 41466 555123 575000) "manifest.json~" "popup.html~" "../" "./" "popup.html" ".gitignore~" "icon.png" "popup_files/" ".git/" ".gitignore" "manifest.json")
+
+ ("/home/dox/LoLTimes/popup_files/" (23142 41007 923707 711000) "../" "./" "popup.js" "css.css" "css.css~")
+
+ ("/home/dox/202/assign3/" (22977 57275 912886 700000) "TftpClient.class" "TftpServerWorker.class" "TftpClient.java~" "../" "TftpClient.java" "TftpServer.java~" "./" "image.jpg" "TftpPacket.java" "TftpServer.class" "TftpServer.java" "makefile" "TftpPacket.class" "TftpPacket.java~")
+
+ ("/home/dox/202/assign4/" (22997 33524 228212 834000) "ChatClient.class" "../" "ChatClient.java~" "./" "ChatClient.java" "makefile")
+
+ ("/home/dox/202/" (22984 23919 569911 792000) "README.md" "assign3/" "../" "./" "assign2/" "assign1/" ".git/" "assign4/")
 
  ("/home/dox/202/assign2/" (22964 41862 766341 462000) "HttpServerSession.class" "HttpServer.java" "../" "HttpServerSession.java" "./" "image.jpg" "HttpServer.java~" "HttpServerSession.java~" "HttpServer.class")
 
