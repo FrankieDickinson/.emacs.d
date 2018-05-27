@@ -14,6 +14,9 @@
 (height . 47) ; lines
 ))
 
+;; Emacs required for hlem
+(require 'helm-config)
+
 ;; Shows which function the point is in
 (show-paren-mode 1)
 
@@ -55,15 +58,13 @@ ad-do-it))
 (setq c-default-style "bsd")
 (setq c-basic-offset 4)
 (setq electric-layout-rules '((?\{ . around) (?\} . around)))
-;; Allow Packages from ELPA and MELPA
-(require 'package) ;; You might already have this line
-(add-to-list 'package-archives
-'("melpa" . "https://melpa.org-packages/"))
-(when (< emacs-major-version 24)
-;; For important compatibility libraries like cl-lib
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
-(package-initialize) ;; You might already have this line
 
+;; Allow Packages from ELPA and MELPA
+
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+             ("marmalade" . "http://marmalade-repo.org/packages/")
+             ("melpa" . "http://melpa.org/packages/")))
+             
 ;; Color theme
 
 ;;(require 'flatui-theme)
