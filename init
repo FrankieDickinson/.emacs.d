@@ -14,13 +14,6 @@
 (height . 47) ; lines
 ))
 
-;; default/sebsequent window
-(setq default-frame-alist
-'(
-(width . 158) ; character
-(height . 58) ; lines
-))
-
 ;; Shows which function the point is in
 (show-paren-mode 1)
 
@@ -99,36 +92,17 @@ ad-do-it))
 (global-set-key (kbd "C-c C-p")    'windmove-up)
 (global-set-key (kbd "C-c C-n")  'windmove-down)
 
-;; Web-mode
-
-(require 'web-mode)
-(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
 ;; Company-mode
 (add-hook 'after-init-hook 'global-company-mode)
 
-;; Js2-mode
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx?\\'" . js2-jsx-mode))
-(add-to-list 'interpreter-mode-alist '("node" . js2-jsx-mode))
-(custom-set-variables
-;; custom-set-variables was added by Custom.
-;; If you edit it by hand, you could mess it up, so be careful.
-;; Your init file should contain only one such instance.
-;; If there is more than one, they won't work right.
-'(package-selected-packages
-(quote
-(evil web-mode spacemacs-theme magit js2-mode dracula-theme company color-theme-sanityinc-tomorrow all-the-icons))))
-(custom-set-faces
-;; custom-set-faces was added by Custom.
-;; If you edit it by hand, you could mess it up, so be careful.
-;; Your init file should contain only one such instance.
-;; If there is more than one, they won't work right.
-)
+;; Give eshell mode the ability to clear the buffer correctly with Ctrl - l
+(defun eshell-clear-buffer ()
+  "Clear terminal"
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)
+    (eshell-send-input)))
+(add-hook 'eshell-mode-hook
+      '(lambda()
+          (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
