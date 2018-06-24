@@ -1,4 +1,7 @@
+;; Automically add elpa packages
+(package-initialize)
 ;; Enable Basic Syntax Highlighting
+
 (global-font-lock-mode 1)
 
 ;; Line Numbers 
@@ -35,8 +38,11 @@
 (require 'ido)
 (ido-mode t)
 
+;; Emacs make space meta-x
+(define-key evil-normal-state-map (kbd "SPC") 'evil-ex)
+ 
 ;; Emacs compile window split to the vertical
-(defadvice compile (around split-horizontally activate)
+(defadvice compile (around split-::horizontally activate)
 (let ((split-width-threshold 0)
 (split-height-threshold nil))
 ad-do-it))
@@ -65,9 +71,7 @@ ad-do-it))
              ("marmalade" . "http://marmalade-repo.org/packages/")
              ("melpa" . "http://melpa.org/packages/")))
              
-;; Color theme
-
-;;(require 'flatui-theme)
+;; Color them
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'dracula t)
@@ -87,17 +91,11 @@ ad-do-it))
 ;; Emacs set font
 (set-default-font "DejaVu Sans Mono Book 11")
 
-;; Emacs move between windows
-(global-set-key (kbd "C-c C-b")  'windmove-left)
-(global-set-key (kbd "C-c C-f") 'windmove-right)
-(global-set-key (kbd "C-c C-p")    'windmove-up)
-(global-set-key (kbd "C-c C-n")  'windmove-down)
-
-
 ;; Company-mode
+
 (add-hook 'after-init-hook 'global-company-mode)
 
-;; Give eshell mode the ability to clear the buffer correctly with Ctrl - l
+;; Give mode the ability to clear the buffer correctly with Ctrl - l
 (defun eshell-clear-buffer ()
   "Clear terminal"
   (interactive)
@@ -107,3 +105,17 @@ ad-do-it))
 (add-hook 'eshell-mode-hook
       '(lambda()
           (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
+
+;; Evil Mode Settings
+(add-to-list 'load-path "~/.emacs.d/elpa/evil")
+(require 'evil)
+(evil-mode 1)
+
+;; Allow key pauses. Dependancy for key-chord
+(add-to-list 'load-path "~/.emacs.d/elpa/key-chord")
+(require 'key-chord)
+(key-chord-mode 1)
+;; let jj exit insert mode 
+(setq key-chord-two-keys-delay 0.5)
+(key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+(key-chord-mode 1)
