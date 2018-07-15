@@ -1,11 +1,5 @@
-;;; Package --- summary
-;;; Code:
-;;; Commentary:
-;;; package-- - Summary  Automically add elpa packages
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
+;;;; init.el --- Initialization file for Emacs
+;;; Commentary: Emacs Startup File --- initialization for Emacs;; Package --- summary
 
 ;; Allow Packages from ELPA and MELPA
 
@@ -49,11 +43,12 @@
   :config
   (key-chord-mode 1)
   (setq key-chord-two-keys-delay 0.5)
+  
   (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
   (key-chord-mode 1))
                                         ; ; let jj exit insert                      ; disable auto-save and auto-backup
 (use-package magit
-  :ensure t) 
+  :ensure t)
 
 (use-package evil-magit
   :ensure t)
@@ -74,6 +69,7 @@
 ;; Line Numbers
 (global-linum-mode t)
 
+
 ;; Stock stae variables
 (which-function-mode 1)
 
@@ -87,7 +83,9 @@
 (use-package linum-relative
   :ensure t
   :config
-  (linum-relative-mode 1))
+  (linum-relative-mode 1)
+  (setq linum-relative-current-symbol "")
+  )
 
 ;; Emacs required for hlem
 (use-package helm
@@ -199,7 +197,7 @@
 (use-package company
   :ensure t
   :config
-  (company-mode 1))
+  (company-global-mode 1))
 
 ;; Give mode the ability to clear the buffer correctly with Ctrl - l
 (defun eshell-clear-buffer()
@@ -269,6 +267,4 @@
  ;; If there is more than one, they won't work right.
  )
 
-
 (find-file "~/.emacs.d/init.el")
-
