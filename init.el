@@ -6,21 +6,58 @@
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
+
+;; Allow Packages from ELPA and MELPA
+
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("melpa". "http://melpa.org/packages/")))
 ;; You may delete these explanatory comments.
 (package-initialize)
+
+(require 'use-package)
+
 ;; Evil Mode Settings
-(require 'evil)
-(evil-mode 1)
+(use-package evil
+  :ensure t
+  :config
+  (evil-mode 1)
+;; Move config
+  )
+
+(use-package evil
+  :ensure t
+  :config
+  (evil-mode 1)
+
+  (use-package evil-leader
+    :ensure t
+    :config
+    (global-evil-leader-mode))
+
+  (use-package evil-surround
+    :ensure t
+    :config
+    (global-evil-surround-mode))
+
+  (use-package evil-indent-textobject
+    :ensure t))
+
 
 ;; Allow key pauses.Dependancy for key - chord
-(require 'key-chord)
-(key-chord-mode 1)
-                                        ; ; let jj exit insert mode
-(setq key-chord-two-keys-delay 0.5)
-(key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
-(key-chord-mode 1)
+(use-package key-chord
+  :ensure t
+  :config
+  (key-chord-mode 1)
+  (setq key-chord-two-keys-delay 0.5)
+  (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+  (key-chord-mode 1))
+                                        ; ; let jj exit insert                      ; disable auto-save and auto-backup
+(use-package magit
+  :ensure t) 
 
-; disable auto-save and auto-backup
+(use-package evil-magit
+  :ensure t)
+
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 
@@ -29,8 +66,10 @@
 (global-font-lock-mode 1)
 
 ;; Yasnnipet
-(require 'yasnippet)
-(yas-global-mode 1)
+(use-package yasnippet
+  :ensure t
+  :config
+  (use-package yasnippet))
 
 ;; Line Numbers
 (global-linum-mode t)
@@ -41,18 +80,27 @@
 ;; Emacs frame size
 (setq initial-frame-alist
       '(
-	(width. 160) ; character
-	(height. 47); lines
+        (width. 160) ; character
+        (height. 47); lines
         ))
 
-(require 'linum-relative)
+(use-package linum-relative
+  :ensure t
+  :config
+  (linum-relative-mode 1))
+
 ;; Emacs required for hlem
-(require 'helm-config)
+(use-package helm
+  :ensure t
+  :config
+  (helm-mode 1))
 
-(require 'kotlin-mode)
-(add-to-list 'auto-mode-alist '("\\.kt\\'".kotlin-mode))
+;; Kotlin Mode
+(use-package kotlin-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.kt\\'".kotlin-mode)))
 
-                                        ; ; Shows which function the point is in
 (show-paren-mode 1)
 
 ;; Highlight piars of parenthesis
@@ -66,9 +114,11 @@
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 
-;; IDO
-(require 'ido)
-(ido-mode t)
+;; IDO improved searching for files
+(use-package ido
+  :ensure t
+  :config
+  (ido-mode t))
 
 ;; Emacs make space meta - x
 ;; (define - key evil - normal - state - map(kbd "SPC") 'evil-ex)
@@ -91,119 +141,38 @@
 (setq c-basic-offset 4)
 (setq electric-layout-rules '((?\{ . around) (?\} . around)))
 
-;; Allow Packages from ELPA and MELPA
-
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-			   ("melpa". "http://melpa.org/packages/")))
 
 ;; Color them
-
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'dracula t)
+(use-package dracula-theme
+  :ensure t
+  :config
+  (load-theme 'dracula t))
 
 ;; Setting Up Org mode
-(require 'org)
-(define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-ca" 'org-agenda)
-(setq org-log-done t)
-(add-hook 'org-mode-hook 'auto-fill-mode)
-(add-hook 'org-mode-hook 'flyspell-mode)
-(add-to-list 'auto-mode-alist '("\\.txt\\'".org-mode))
+(use-package org
+  :ensure t
+  :config
+  (define-key global-map "\C-cl" 'org-store-link)
+  (define-key global-map "\C-ca" 'org-agenda)
+  (setq org-log-done t)
+  (add-hook 'org-mode-hook 'auto-fill-mode)
+  (add-hook 'org-mode-hook 'flyspell-mode)
+  (add-to-list 'auto-mode-alist '("\\.txt\\'".org-mode)))
 ;; Mode for writing documentation
 
-
 ;; Emacs set font
-(set-frame-font "DejaVu Sans Mono Book 11")
+(set-frame-font "DejaVu Sans Mono Book 14")
 
-;; Company - mode
-
-(add-hook 'after-init-hook 'global-company-mode)
-
-;; Give mode the ability to clear the buffer correctly with Ctrl - l
-(defun eshell-clear-buffer()
-       "Clear terminal"
-       (interactiv)
-       (let((inhibit-read-only t))
-	 (erase-buffer)
-	 (eshell-send-input)))
-(add-hook 'eshell-mode-hook
-     '(lambda()
-	(local-set-key(kbd "C-l") 'eshell-clear-buffer)))
-
-(require 'js2-mode)
-(setq js2-strict-missing-semi-warning nil)
-(setq js2-missing-semi-one-line-override nil)
-(add-to-list 'auto-mode-alist '("\\.js\\'".js2 - mode))
-
-;; Relative linum
-(linum-relative-global-mode t)
-
-;; Keybindings
-;; TODO Group keybindings
-(global-set-key (kbd "C-x C-\\") 'next-line)
-
-;; Better imenu
-(require 'js2-mode)
-(add-hook 'js2-mode-hook #'js2-imenu-extras-mode)
-(require 'indium)
-(add-hook 'js2-mode-hook #'indium-interaction-mode)
-(require 'company)
-(require 'company-tern)
-
-(add-to-list 'company-backends 'company-tern)
-(add-hook 'js2-mode-hook (lambda ()
-			     (tern-mode)
-			     (company-mode)))
-;; Tide setup
-(defun setup-tide-mode()
-       (interactive)
-       (tide-setup)
-       (flycheck-mode + 1)
-       (setq flycheck-check-syntax-automatically '(save mode-enabled))
-       (eldoc-mode + 1)
-       (tide-hl-identifier-mode + 1)
-       ;; company is an optional dependency.You have to
-       ;; install it separately via package - install
-       ;; `M-x package-install [ret] company`
-       (company-mode + 1))
-
-;; aligns annotation to the right hand side
-(setq company-tooltip-align-annotations t)
-
-;; formats the buffer before saving
-(add-hook 'before-save-hook 'tide-frmat-before-save)
-
-(add-hook 'typescript-mode-hook #'setup-tide-mode)
-
-
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(js-indent-level 2)
- '(package-selected-packages
-   (quote
-    (yasnippet tide web-mode kotlin-mode linum-relative key-chord indium helm flycheck evil company-tern))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-;; eslint settings in .eslintrc
-;; http://www.flycheck.org/manual/latest/index.html
-(require 'flycheck)
-
+(use-package flycheck
+  :ensure t
+  :config
 ;; turn on flychecking globally
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; disable jshint since we prefer eslint checking
 (setq-default flycheck-disabled-checkers
-      (append flycheck-disabled-checkers
-              '(javascript-jshint)))
+              (append flycheck-disabled-checkers
+                      '(javascript-jshint)))
 
 ;; use eslint with web - mode for jsx files
 (flycheck-add-mode 'javascript-eslint 'web-mode)
@@ -224,9 +193,81 @@
 ;; The above is the default in recent emacsen
 
 ;; customize flycheck temp file prefix
-(setq-default flycheck-temp-prefix ".flycheck")
+(setq-default flycheck-temp-prefix ".flycheck"))
 
-;; Yasnippets
+;; Company - mode
+(use-package company
+  :ensure t
+  :config
+  (company-mode 1))
+
+;; Give mode the ability to clear the buffer correctly with Ctrl - l
+(defun eshell-clear-buffer()
+  "Clear terminal"
+  (interactiv)
+  (let((inhibit-read-only t))
+    (erase-buffer)
+    (eshell-send-input)))
+(add-hook 'eshell-mode-hook
+          '(lambda()
+             (local-set-key(kbd "C-l") 'eshell-clear-buffer)))
+
+(use-package company-tern
+  :ensure t
+  :config
+  (add-to-list 'company-backends 'company-tern))
+
+(use-package js2-mode
+  :ensure t
+  :config
+  (setq js2-strict-missing-semi-warning nil)
+  (setq js2-missing-semi-one-line-override nil)
+  (add-hook 'js2-mode-hook#'js2-imenu-extras-mode)
+  (add-hook 'js2-mode-hook (lambda ()
+                             (tern-mode)
+                             (company-mode)))
+  (add-to-list 'auto-mode-alist '("\\.js\\'".js2 - mode)))
+
+;; Keybindings
+;; TODO Group keybindings
+(global-set-key (kbd "C-x C-\\") 'next-line)
+
+;; Tide setup
+(defun setup-tide-mode()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency.You have to
+  ;; install it separately via package - install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
+
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+
+;; formats the buffer before saving
+(add-hook 'before-save-hook 'tide-frmat-before-save)
+
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(js-indent-level 2)
+ '(package-selected-packages
+   (quote
+    (yasnippet tide web-mode kotlin-mode linum-relative key-chord indium  flycheck evil company-tern))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
 
 (find-file "~/.emacs.d/init.el")
