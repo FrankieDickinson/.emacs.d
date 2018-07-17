@@ -197,7 +197,7 @@
 (use-package company
   :ensure t
   :config
-  (company-global-mode 1))
+  (company-mode 1))
 
 ;; Give mode the ability to clear the buffer correctly with Ctrl - l
 (defun eshell-clear-buffer()
@@ -217,15 +217,16 @@
 
 (use-package js2-mode
   :ensure t
+  :mode (("\\.js\\'" . js2-mode))
   :config
-  (setq js2-strict-missing-semi-warning nil)
-  (setq js2-missing-semi-one-line-override nil)
-  (add-hook 'js2-mode-hook#'js2-imenu-extras-mode)
-  (add-hook 'js2-mode-hook (lambda ()
-                             (tern-mode)
-                             (company-mode)))
-  (add-to-list 'auto-mode-alist '("\\.js\\'".js2 - mode)))
-
+  (add-to-list 'auto-mode-alist '("\\.js\\'".js2-mode))
+               (setq js2-strict-missing-semi-warning nil)
+               (setq js2-missing-semi-one-line-override nil)
+               (add-hook 'js2-mode-hook#'js2-imenu-extras-mode)
+               (add-hook 'js2-mode-hook (lambda ()
+                                          (yas-minor-mode)
+                                          (tern-mode)
+                                          (company-mode))))
 ;; Keybindings
 ;; TODO Group keybindings
 (global-set-key (kbd "C-x C-\\") 'next-line)
