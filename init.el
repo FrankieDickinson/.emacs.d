@@ -1,7 +1,10 @@
-;;;; init.el --- Initialization file for Emacs
-;;; Commentary: Emacs Startup File --- initialization for Emacs;; Package --- summary
+;;; package --- Summary
+;;; Commentary:
+;;; Emacs Startup File --- initialization for Emacs;; Package --- summary
 
 ;; Allow Packages from ELPA and MELPA
+
+;;; Code:
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("melpa". "http://melpa.org/packages/")))
@@ -15,6 +18,7 @@
   :ensure t
   :config
   (evil-mode 1)
+  (setq evil-want-C-u-scroll t)
 ;; Move config
   )
 
@@ -159,7 +163,7 @@
 ;; Mode for writing documentation
 
 ;; Emacs set font
-(set-frame-font "DejaVu Sans Mono Book 14")
+(set-frame-font "Source Code Pro 13")
 
 (use-package flycheck
   :ensure t
@@ -198,6 +202,10 @@
   :ensure t
   :config
   (company-mode 1))
+
+;; Python mode
+
+
 
 ;; Give mode the ability to clear the buffer correctly with Ctrl - l
 (defun eshell-clear-buffer()
@@ -257,10 +265,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-idle-delay 0.1)
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (yasnippet tide web-mode kotlin-mode linum-relative key-chord indium  flycheck evil company-tern))))
+    (yasnippet tide web-mode kotlin-mode linum-relative key-chord indium flycheck evil company-tern))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
