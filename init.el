@@ -171,6 +171,7 @@
 ;; turn on flychecking globally
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
 ;; disable jshint since we prefer eslint checking
 (setq-default flycheck-disabled-checkers
               (append flycheck-disabled-checkers
@@ -204,8 +205,6 @@
   (company-mode 1))
 
 ;; Python mode
-
-
 
 ;; Give mode the ability to clear the buffer correctly with Ctrl - l
 (defun eshell-clear-buffer()
