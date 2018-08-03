@@ -1,9 +1,7 @@
 ;;; package --- Summary
 ;;; Commentary:
 ;;; Emacs Startup File --- initialization for Emacs;; Package --- summary
-
 ;; Allow Packages from ELPA and MELPA
-
 ;;; Code:
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -13,15 +11,20 @@
 
 (require 'use-package)
 
-;; Evil Mode Settings
+;; Evil
 (use-package evil
-  :ensure t
-  :config
-  (evil-mode 1)
-  (setq evil-want-C-u-scroll t)
-;; Move config
-  )
+:ensure t
+:init
+(setq evil-want-C-u-scroll t)
 
+(when evil-want-C-u-scroll
+   (define-key evil-insert-state-map (kbd "C-u") 'evil-scroll-up)
+   (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
+   (define-key evil-visual-state-map (kbd "C-u") 'evil-scroll-up)
+   (define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up))
+
+:config
+)
 (use-package evil
   :ensure t
   :config
@@ -215,7 +218,7 @@
     (eshell-send-input)))
 (add-hook 'eshell-mode-hook
           '(lambda()
-             (local-set-key(kbd "C-l") 'eshell-clear-buffer)))
+           (local-set-key(kbd "C-l") 'eshell-clear-buffer)))
 
 (use-package company-tern
   :ensure t
@@ -275,5 +278,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
 (find-file "~/.emacs.d/init.el")
+
+
